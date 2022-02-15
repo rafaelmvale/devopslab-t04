@@ -7,4 +7,5 @@ def pagina_inicial():
     return "Hello World - Rafael Vale"
 
 if __name__ == '__main__':
-    app.run()
+    port = os.getenv('PORT')
+    app.run('0.0.0.0', port=port)
